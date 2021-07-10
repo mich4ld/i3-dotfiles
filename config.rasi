@@ -1,0 +1,91 @@
+configuration {
+	font: "Roboto Mono 14";
+	fullscreen: true;
+	drun-display-format: "{name}";
+}
+
+* {
+	background: #141C21;
+	alt-background: #1d282f;
+	foreground: #FAFAFA;
+	cyan: #71c7ec;
+
+	text: #212121;
+}
+
+inputbar {
+	margin: 50px 600px 50px 600px;
+	background-color: @foreground;
+	border-radius: 20px;
+	end: false;
+}
+
+prompt {
+	background-color: transparent;
+	text-color: @text;
+	font: "Iosevka Nerd Font 14";
+	padding: 8px;
+	margin: 0 0 0 4;
+}
+
+prompt-box {
+	background-color: transparent;
+}
+
+entry {
+	padding: 8px;
+	placeholder: "Search";
+	text-color: @text;
+}
+
+window {
+	background-color: @background;
+	padding: 100;
+}
+
+mainbox {
+	background-color: @background;
+}
+
+listview {
+    padding: 20px;
+    margin: 20px 30px 30px 30px;
+    background-color: @background;
+    columns: 7;
+	scrollbar: true;
+	fixed-height: true;
+}
+
+element-icon {
+    size: 64px;
+    border: 0px;
+}
+
+element {
+    background-color:  @background;
+    text-color:  @foreground;
+    orientation: vertical;
+    border-radius: 0%;
+    padding: 3% 0% 2% 0%;
+}
+
+element selected {
+	border-color: @cyan;
+	background-color: @alt-background;
+	border-radius: 4;
+	border: 0 0 2 0;
+}
+
+element-text {
+	font: "Roboto Mono 11";
+    expand:                         false;
+    horizontal-align:               0.5;
+    vertical-align:                 0.5;
+    margin:                         0.5% 1% 0% 1%;
+}
+
+scrollbar {
+   background-color: @background;
+   handle-color: @alt-background;
+   handle-width: 7px;
+}
