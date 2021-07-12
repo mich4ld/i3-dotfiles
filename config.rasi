@@ -8,7 +8,7 @@ configuration {
 	background: #141C21;
 	alt-background: #1d282f;
 	foreground: #FAFAFA;
-	cyan: #71c7ec;
+	cyan: #75d8e0;
 
 	text: #212121;
 }
