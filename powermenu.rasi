@@ -1,0 +1,61 @@
+configuration {
+	font: "Roboto Mono 32";
+	window-format: "{t}";
+    lines: 1;
+    width: 50;
+}
+
+* {
+	background: #141C21;
+	alt-background: #1d282f;
+	foreground: #FAFAFA;
+	cyan: #75d8e0;
+	text: #212121;
+}
+
+
+window {
+	background-color: @background;
+}
+
+listview {
+    padding: 40px;
+    background-color: @background;
+    columns: 3;
+	scrollbar: false;
+	fixed-height: true;
+    orientation: horizontal;
+    fixed-columns: true;
+}
+
+mainbox {
+	background-color: @background;
+    padding: 20px;
+}
+
+element-text {
+    expand: false;
+    horizontal-align: 0.5;
+    vertical-align: 0.5;
+}
+
+element {
+    padding: 3% 0% 3% 0%;
+    margin: 20px;
+    background-color: @background;
+    text-color:  @foreground;
+    orientation: vertical;
+    border-radius: 0%;
+}
+
+element selected {
+    background-color: @alt-background;
+    border: 0 0 3px 0;
+    border-color: @cyan;
+}
+
+inputbar {
+    children: [];
+    enable: false;
+	background-color: transparent;
+}

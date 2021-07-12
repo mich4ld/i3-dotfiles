@@ -1,0 +1,103 @@
+configuration {
+	font: "Roboto Mono 10";
+	window-format: "{t}";
+    lines: 1;
+    width: 60;
+}
+
+* {
+	background: #141C21;
+	alt-background: #1d282f;
+	foreground: #FAFAFA;
+	cyan: #75d8e0;
+	text: #212121;
+}
+
+
+window {
+	background-color: @background;
+}
+
+listview {
+    padding: 20px;
+    margin: 20px 30px 30px 30px;
+    background-color: @background;
+    columns: 4;
+	scrollbar: true;
+	fixed-height: true;
+    orientation: horizontal;
+    fixed-columns: true;
+}
+
+mainbox {
+	background-color: @background;
+    padding: 20px;
+}
+
+element-icon {
+    size: 64px;
+    border: 0px;
+}
+
+element-text {
+    expand: false;
+    horizontal-align: 0.5;
+    vertical-align: 0.5;
+    margin: 2% 1% 0% 1%;
+}
+
+element {
+    padding: 3% 0% 2% 0%;
+    margin: 10px;
+    background-color: @background;
+    text-color:  @foreground;
+    orientation: vertical;
+    border-radius: 0%;
+}
+
+inputbar {
+    children: [prompt, entry];
+    enable: false;
+	background-color: @background;
+}
+
+entry {
+    enable: false;
+	padding: 8px;
+    background-color: @background;
+	placeholder: "Search";
+	text-color: @foreground;
+}
+
+
+#case-indicator {
+    spacing:    0;
+    text-color: @foreground;
+    background-color: @background;
+}
+
+prompt-box {
+    enable: false;
+	background-color: @background;
+}
+
+prompt {
+	background-color: @background;
+	text-color: @foreground;
+	padding: 8px;
+    font: "Iosevka Nerd Font 11";
+	margin: 0 0 0 4;
+}
+
+element selected {
+	border-color: @cyan;
+	background-color: @alt-background;
+	border-radius: 4;
+	border: 0 0 2 0;
+}
+
+scrollbar {
+   background-color: @background;
+   handle-color: @alt-background;
+   handle-width: 7px;
+}
