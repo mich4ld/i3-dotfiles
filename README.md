@@ -16,3 +16,5 @@ $ cd dotfiles
 $ chmod +x ./install.sh
 $ ./install.sh
 ```
+
+### Most configs directory: `~/.config/miszq-dots/`
