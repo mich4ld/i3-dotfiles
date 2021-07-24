@@ -3,7 +3,7 @@ shutdown=""
 reboot=""
 logout=""
 
-result=$(printf "$shutdown\n$reboot\n$logout\n" | rofi -dmenu -no-config -theme ~/customs/powermenu.rasi)
+result=$(printf "$shutdown\n$reboot\n$logout\n" | rofi -dmenu -no-config -theme ~/.config/miszq-dots/rofi/powermenu.rasi)
 
 if [ -z $result ]
 then
