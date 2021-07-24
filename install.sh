@@ -20,7 +20,7 @@ function set_wallpaper() {
 function arch_install() {
     echo "Installing packages for Arch"
     sudo pacman -Sy
-    sudo pacman -S rofi dunst nitrogen redshift pamixer
+    sudo pacman -S rofi dunst nitrogen redshift pamixer kitty
 }
 
 function debian_install() {
