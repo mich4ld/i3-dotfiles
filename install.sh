@@ -15,7 +15,9 @@ function prepare_install() {
 
 function set_wallpaper() {
     echo "Setting new wallpaper..."
-    nitrogen --set-auto ./wallhaven-6kw7kq.jpg
+    mkdir -p "$MY_CONFIG_DIR/wallpapers/"
+    cp -v ./wallpapers/* "$MY_CONFIG_DIR/wallpapers"
+    nitrogen "$MY_CONFIG_DIR"
 }
 
 function arch_install() {
