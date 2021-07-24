@@ -1,4 +1,4 @@
-# Your i3 config file path:
+# Default i3 config file path:
 I3_CONFIG=~/.config/i3/config
 I3_CONFIG_BACKUP=~/.config/i3/config.old
 
