@@ -2,22 +2,34 @@
 I3_CONFIG=~/.config/i3/config
 I3_CONFIG_BACKUP=~/.config/i3/config.old
 
-# Your local font directory:
+# Your local font directory
 FONTS_DIR=~/.local/share/fonts/
 
+# My configs directory - DON'T CHANGE:
+MY_CONFIG_DIR=~/.config/miszq-dots
+
+function prepare_install() {
+   mkdir -p $MY_CONFIG_DIR
+}
+
+function set_wallpaper() {
+    echo "Setting new wallpaper..."
+    nitrogen --set-auto ./wallhaven-6kw7kq.jpg
+}
+
 function arch_install() {
-    echo "Installing packages for Arch..."
+    echo "Installing packages for Arch"
     sudo pacman -Sy
-    sudo pacman -S rofi dunst nitrogen
+    sudo pacman -S rofi dunst nitrogen redshift pamixer
 }
 
 function debian_install() {
-    echo "Installing packages for Debian..."
+    echo "Installing packages for Debian"
 }
 
 function ask_distro() {
     echo "Which distro are you using?"
-    echo "1) Arch based (Arch, Manjaro)"
+    echo "1) Arch (Arch, Manjaro)"
 
     read DISTRO
 
@@ -46,17 +58,23 @@ function config_i3() {
     cp $I3_CONFIG $I3_CONFIG_BACKUP 
 
     echo "Configure i3..."
+    cp ./i3/config $I3_CONFIG
 }
 
 function config_polybar() {
     echo "Configure polybar..."
+    mkdir -p "$MY_CONFIG_DIR/polybar"
+    cp -v ./polybar/** "$MY_CONFIG_DIR/polybar"
 }
 
 function config_rofi() {
     echo "Configure rofi..."
 }
 
+# Execute functions:
+prepare_install
 install_dependencies
+set_wallpaper
 install_fonts
 config_polybar
 config_rofi
