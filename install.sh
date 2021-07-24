@@ -17,7 +17,7 @@ function set_wallpaper() {
     echo "Setting new wallpaper..."
     mkdir -p "$MY_CONFIG_DIR/wallpapers/"
     cp -v ./wallpapers/* "$MY_CONFIG_DIR/wallpapers"
-    nitrogen "$MY_CONFIG_DIR"
+    nitrogen "$MY_CONFIG_DIR/wallpapers"
 }
 
 function arch_install() {
