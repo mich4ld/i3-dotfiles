@@ -17,7 +17,7 @@ function debian_install() {
 
 function ask_distro() {
     echo "Which distro are you using?"
-    echo "1) Arch (Arch, Manjaro)"
+    echo "1) Arch based (Arch, Manjaro)"
 
     read DISTRO
 
