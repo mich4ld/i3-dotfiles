@@ -67,14 +67,14 @@ function config_i3() {
 function config_polybar() {
     echo "Configure polybar..."
     mkdir -p "$MY_CONFIG_DIR/polybar"
-    cp -v ./polybar/** "$MY_CONFIG_DIR/polybar"
+    cp -vr ./polybar/** "$MY_CONFIG_DIR/polybar"
     chmod -R +x "$MY_CONFIG_DIR/polybar/scripts/"
 }
 
 function config_rofi() {
     echo "Configure rofi..."
      mkdir -p "$MY_CONFIG_DIR/rofi"
-     cp -v ./rofi/** "$MY_CONFIG_DIR/rofi"
+     cp -vr ./rofi/** "$MY_CONFIG_DIR/rofi"
      chmod -R +x "$MY_CONFIG_DIR/rofi/scripts/"
 }
 
