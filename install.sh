@@ -73,9 +73,9 @@ function config_polybar() {
 
 function config_rofi() {
     echo "Configure rofi..."
-     mkdir -p "$MY_CONFIG_DIR/rofi"
-     cp -vr ./rofi/** "$MY_CONFIG_DIR/rofi"
-     chmod -R +x "$MY_CONFIG_DIR/rofi/scripts/"
+    mkdir -p "$MY_CONFIG_DIR/rofi"
+    cp -vr ./rofi/** "$MY_CONFIG_DIR/rofi"
+    chmod -R +x "$MY_CONFIG_DIR/rofi/scripts/"
 }
 
 # Execute functions:
