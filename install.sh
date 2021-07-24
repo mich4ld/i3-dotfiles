@@ -6,13 +6,13 @@ I3_CONFIG_BACKUP=~/.config/i3/config.old
 FONTS_DIR=~/.local/share/fonts/
 
 function arch_install() {
-    echo "Installing packages for Arch"
+    echo "Installing packages for Arch..."
     sudo pacman -Sy
     sudo pacman -S rofi dunst nitrogen
 }
 
 function debian_install() {
-    echo "Installing packages for Debian"
+    echo "Installing packages for Debian..."
 }
 
 function ask_distro() {
