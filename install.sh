@@ -2,7 +2,7 @@
 I3_CONFIG=~/.config/i3/config
 I3_CONFIG_BACKUP=~/.config/i3/config.old
 
-# Your local font directory
+# Your local font directory:
 FONTS_DIR=~/.local/share/fonts/
 
 function arch_install() {
