@@ -1,5 +1,8 @@
 # My Dotfiles
 
+### Requirements:
+- You need i3-gaps
+
 ### Install Polybar from AUR:
 Example with `paru`:
 ```
