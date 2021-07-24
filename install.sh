@@ -7,6 +7,7 @@ FONTS_DIR=~/.local/share/fonts/
 
 # My configs directory - DON'T CHANGE:
 MY_CONFIG_DIR=~/.config/miszq-dots
+cd "$(dirname "$0")"
 
 function prepare_install() {
    mkdir -p $MY_CONFIG_DIR
