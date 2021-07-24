@@ -3,7 +3,7 @@ muted="$(pamixer --get-mute)"
 
 if [ $muted = "true" ]; then 
     echo "  Muted"
-elif [ "$volume" -gt "65" ]; then
+elif [ "$volume" -gt "50" ]; then
 	echo "  $volume"
 elif [ "$volume" == "0" ]; then
 	echo "  Muted"
