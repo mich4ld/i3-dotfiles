@@ -24,7 +24,7 @@ exec --no-startup-id nm-applet
 # Setup wallpaper and polybar
 exec --no-startup-id nitrogen --restore
 exec killall polybar
-exec polybar -c=~/.config/miszq-dots/polybar.ini mybar
+exec polybar -c=~/.config/miszq-dots/polybar/polybar.ini mybar
 exec redshift -l 51.562513:21.865516
 
 # Setup polkit auth agent
