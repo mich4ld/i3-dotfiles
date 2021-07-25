@@ -21,18 +21,18 @@ function set_wallpaper() {
 }
 
 function arch_install() {
-    echo "Installing packages for Arch"
+    echo "Installing packages for Arch..."
     sudo pacman -Sy
     sudo pacman -S rofi dunst nitrogen redshift pamixer kitty
 }
 
 function debian_install() {
-    echo "Installing packages for Debian"
+    echo "Installing packages for Debian..."
 }
 
 function ask_distro() {
     echo "Which distro are you using?"
-    echo "1) Arch (Arch, Manjaro)"
+    echo "1) Arch based (Arch, Manjaro)"
 
     read DISTRO
 
