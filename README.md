@@ -6,7 +6,8 @@
 ![image](https://user-images.githubusercontent.com/43048524/127713872-66c73916-effb-4b0f-8321-f6449edf4662.png)
 
 ### Requirements:
-- You need i3-gaps
+- i3-gaps
+- polybar
 
 ### Install Polybar from AUR:
 Example with `paru`:
