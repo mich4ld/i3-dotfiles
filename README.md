@@ -17,7 +17,7 @@ $ paru -S polybar
 
 ### Install with script
 ```bash
-$ git clone https://github.com/michaldzi/dotfiles.git
+$ git clone https://github.com/mich4ld/dotfiles.git
 $ cd dotfiles
 $ chmod +x ./install.sh
 $ ./install.sh
