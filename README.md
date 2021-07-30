@@ -1,4 +1,4 @@
-# My Dotfiles
+# My Dotfiles (work in progress)
 
 ### Requirements:
 - You need i3-gaps
