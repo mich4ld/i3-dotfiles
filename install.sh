@@ -67,7 +67,7 @@ function config_i3() {
 function config_dunst() {
    echo "Configure dunst..."
    mkdir -p "~/.config/dunst"
-    cp ./dunst/dunstrc ~/.config/dunst/dunstrc
+   cp ./dunst/dunstrc ~/.config/dunst/dunstrc
 }
 
 function config_polybar() {
