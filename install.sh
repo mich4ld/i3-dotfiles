@@ -64,6 +64,12 @@ function config_i3() {
     cp ./i3/config $I3_CONFIG
 }
 
+function config_dunst() {
+   echo "Configure dunst..."
+   mkdir -p "~/.config/dunst"
+    cp ./dunst/dunstrc ~/.config/dunst/dunstrc
+}
+
 function config_polybar() {
     echo "Configure polybar..."
     mkdir -p "$MY_CONFIG_DIR/polybar"
@@ -84,5 +90,6 @@ install_dependencies
 set_wallpaper
 install_fonts
 config_polybar
+config_dunst
 config_rofi
 config_i3
