@@ -23,7 +23,7 @@ function set_wallpaper() {
 function arch_install() {
     echo "===> Installing packages for Arch..."
     sudo pacman -Sy
-    sudo pacman -S rofi dunst nitrogen redshift pamixer kitty
+    sudo pacman -S rofi dunst nitrogen redshift pamixer kitty thunar tumbler
 }
 
 function debian_install() {
